@@ -1,0 +1,38 @@
+codigo em java:
+
+
+import java.util.Scanner;
+public class Main
+{
+  public static void main (String[]args){
+    float n1, n2, n3, tt, ma, ra;
+      ma = 0;
+    //entrada
+    do{
+
+	Scanner sc = new Scanner (System.in);
+	  System.out.println ("informe seu RA por gentileza");
+	  ma = sc.nextFloat ();
+	if (ma > 0){
+	    System.out.println ("agora digite suas 3 notas da prova");
+	    n1 = sc.nextFloat ();
+	    n2 = sc.nextFloat ();
+	    n3 = sc.nextFloat ();
+	    tt = ((n1 + n2 + n3) / 3);
+	    if (tt >= 70){
+		System.out.println ("parabens voce ta aprovado, sua nota foi:" + tt);
+		}
+	    else if (tt >= 60 && tt < 70){
+		System.out.println ("recuperaçao, voce ainda tem chance");
+	    }
+		else{
+		System.out.println("voce nao foi aprovado sua nota foi inferior a 70, sua nota É "+ tt);
+		}
+	      }
+	      else{
+    }
+    }
+	while (ma > 0);
+	System.out.println (" MATRICULA INCORRETA  ");
+    }
+}
